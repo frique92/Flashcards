@@ -1,6 +1,24 @@
 [1;31m
 Start test 1[0m
-Card:
-purchase
-Definition:
-buy
+>a purring animal
+>cat
+>cat
+Your answer is right!
+[1;31m
+Start test 2[0m
+>a purring animal
+>cat
+>????
+Your answer is wrong...
+[1;31m
+Start test 3[0m
+>a barking animal
+>dog
+>cat
+Your answer is wrong...
+[1;31m
+Start test 4[0m
+>a barking animal
+>dog
+>dog
+Your answer is right!

@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FlashcardsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-02T06:16:19" hostname="GopherPC" time="0.093">
+<testsuite name="FlashcardsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-02T06:27:26" hostname="GopherPC" time="0.084">
   <properties/>
-  <testcase name="start" classname="FlashcardsTest" time="0.093"/>
+  <testcase name="start" classname="FlashcardsTest" time="0.084"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
-Card:
-purchase
-Definition:
-buy
+>a purring animal
+>cat
+>cat
+Your answer is right!
+?[1;31m
+Start test 2?[0m
+>a purring animal
+>cat
+>????
+Your answer is wrong...
+?[1;31m
+Start test 3?[0m
+>a barking animal
+>dog
+>cat
+Your answer is wrong...
+?[1;31m
+Start test 4?[0m
+>a barking animal
+>dog
+>dog
+Your answer is right!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
