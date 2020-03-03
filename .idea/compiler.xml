@@ -4,6 +4,16 @@
     <bytecodeTargetLevel>
       <module name="Flashcards-task_main" target="11" />
       <module name="Flashcards-task_test" target="11" />
+      <module name="Problems-Initializing_an_array_of_characters_main" target="11" />
+      <module name="Problems-Initializing_an_array_of_characters_test" target="11" />
+      <module name="Problems-Initializing_an_array_of_longs_main" target="11" />
+      <module name="Problems-Initializing_an_array_of_longs_test" target="11" />
+      <module name="Problems-The_sum_of_array_elements_main" target="11" />
+      <module name="Problems-The_sum_of_array_elements_test" target="11" />
+      <module name="Problems__1_-The_maximum_pairwise_product_main" target="11" />
+      <module name="Problems__1_-The_maximum_pairwise_product_test" target="11" />
+      <module name="Problems__2_-Right_Rotation_main" target="11" />
+      <module name="Problems__2_-Right_Rotation_test" target="11" />
       <module name="util_main" target="11" />
       <module name="util_test" target="11" />
     </bytecodeTargetLevel>
