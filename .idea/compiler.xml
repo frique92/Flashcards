@@ -34,6 +34,18 @@
       <module name="Problems__1_-The_maximum_pairwise_product_test" target="11" />
       <module name="Problems__20_-Getting_the_fullname_main" target="11" />
       <module name="Problems__20_-Getting_the_fullname_test" target="11" />
+      <module name="Problems__21_-Project_constants_and_methods_main" target="11" />
+      <module name="Problems__21_-Project_constants_and_methods_test" target="11" />
+      <module name="Problems__22_-Too_many_cats_main" target="11" />
+      <module name="Problems__22_-Too_many_cats_test" target="11" />
+      <module name="Problems__23_-Phone_main" target="11" />
+      <module name="Problems__23_-Phone_test" target="11" />
+      <module name="Problems__24_-Movie_main" target="11" />
+      <module name="Problems__24_-Movie_test" target="11" />
+      <module name="Problems__25_-Employee_main" target="11" />
+      <module name="Problems__25_-Employee_test" target="11" />
+      <module name="Problems__26_-Classes_for_Hospital_main" target="11" />
+      <module name="Problems__26_-Classes_for_Hospital_test" target="11" />
       <module name="Problems__2_-Right_Rotation_main" target="11" />
       <module name="Problems__2_-Right_Rotation_test" target="11" />
       <module name="Problems__3_-The_roots_of_an_equation_main" target="11" />

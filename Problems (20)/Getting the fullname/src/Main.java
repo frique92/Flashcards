@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 class User {
     private String firstName;
     private String lastName;
