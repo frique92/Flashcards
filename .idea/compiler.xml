@@ -10,10 +10,46 @@
       <module name="Problems-Initializing_an_array_of_longs_test" target="11" />
       <module name="Problems-The_sum_of_array_elements_main" target="11" />
       <module name="Problems-The_sum_of_array_elements_test" target="11" />
+      <module name="Problems__10_-Account_main" target="11" />
+      <module name="Problems__10_-Account_test" target="11" />
+      <module name="Problems__11_-Book_main" target="11" />
+      <module name="Problems__11_-Book_test" target="11" />
+      <module name="Problems__12_-Account_and_its_owner_main" target="11" />
+      <module name="Problems__12_-Account_and_its_owner_test" target="11" />
+      <module name="Problems__13_-Army_main" target="11" />
+      <module name="Problems__13_-Army_test" target="11" />
+      <module name="Problems__14_-Preparing_full_name_main" target="11" />
+      <module name="Problems__14_-Preparing_full_name_test" target="11" />
+      <module name="Problems__15_-Counter_main" target="11" />
+      <module name="Problems__15_-Counter_test" target="11" />
+      <module name="Problems__16_-Application_as_a_class_main" target="11" />
+      <module name="Problems__16_-Application_as_a_class_test" target="11" />
+      <module name="Problems__17_-Simulating_a_clock_main" target="11" />
+      <module name="Problems__17_-Simulating_a_clock_test" target="11" />
+      <module name="Problems__18_-Account_main" target="11" />
+      <module name="Problems__18_-Account_test" target="11" />
+      <module name="Problems__19_-Book_main" target="11" />
+      <module name="Problems__19_-Book_test" target="11" />
       <module name="Problems__1_-The_maximum_pairwise_product_main" target="11" />
       <module name="Problems__1_-The_maximum_pairwise_product_test" target="11" />
+      <module name="Problems__20_-Getting_the_fullname_main" target="11" />
+      <module name="Problems__20_-Getting_the_fullname_test" target="11" />
       <module name="Problems__2_-Right_Rotation_main" target="11" />
       <module name="Problems__2_-Right_Rotation_test" target="11" />
+      <module name="Problems__3_-The_roots_of_an_equation_main" target="11" />
+      <module name="Problems__3_-The_roots_of_an_equation_test" target="11" />
+      <module name="Problems__4_-Fizz_Buzz_main" target="11" />
+      <module name="Problems__4_-Fizz_Buzz_test" target="11" />
+      <module name="Problems__5_-Print_main" target="11" />
+      <module name="Problems__5_-Print_test" target="11" />
+      <module name="Problems__6_-Users_main" target="11" />
+      <module name="Problems__6_-Users_test" target="11" />
+      <module name="Problems__7_-Points_on_the_2D_plane_main" target="11" />
+      <module name="Problems__7_-Points_on_the_2D_plane_test" target="11" />
+      <module name="Problems__8_-Tables_and_rows_main" target="11" />
+      <module name="Problems__8_-Tables_and_rows_test" target="11" />
+      <module name="Problems__9_-Binary_search_main" target="11" />
+      <module name="Problems__9_-Binary_search_test" target="11" />
       <module name="util_main" target="11" />
       <module name="util_test" target="11" />
     </bytecodeTargetLevel>

@@ -26,6 +26,9 @@ public class Main {
             definitionCards[i] = definition;
         }
 
+//        System.out.println(Arrays.toString(cards));
+//        System.out.println(Arrays.toString(definitionCards));
+
         for (int i = 0; i < cards.length; i++) {
             System.out.println("Print the definition of \"" + cards[i] + "\":");
             String definition = scanner.nextLine();
@@ -35,6 +38,8 @@ public class Main {
                 System.out.println("Wrong answer. The correct one is \"" + definitionCards[i] + "\".");
             }
         }
+
+
 
     }
 }
