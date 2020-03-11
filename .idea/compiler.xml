@@ -46,8 +46,20 @@
       <module name="Problems__25_-Employee_test" target="11" />
       <module name="Problems__26_-Classes_for_Hospital_main" target="11" />
       <module name="Problems__26_-Classes_for_Hospital_test" target="11" />
+      <module name="Problems__27_-Cyclically_shifting_elements_main" target="11" />
+      <module name="Problems__27_-Cyclically_shifting_elements_test" target="11" />
+      <module name="Problems__28_-Fix_the_non-compiled_hierarchy_main" target="11" />
+      <module name="Problems__28_-Fix_the_non-compiled_hierarchy_test" target="11" />
+      <module name="Problems__29_-Employees_main" target="11" />
+      <module name="Problems__29_-Employees_test" target="11" />
       <module name="Problems__2_-Right_Rotation_main" target="11" />
       <module name="Problems__2_-Right_Rotation_test" target="11" />
+      <module name="Problems__30_-Saying_animals_main" target="11" />
+      <module name="Problems__30_-Saying_animals_test" target="11" />
+      <module name="Problems__31_-Shapes_area_main" target="11" />
+      <module name="Problems__31_-Shapes_area_test" target="11" />
+      <module name="Problems__32_-Publications_main" target="11" />
+      <module name="Problems__32_-Publications_test" target="11" />
       <module name="Problems__3_-The_roots_of_an_equation_main" target="11" />
       <module name="Problems__3_-The_roots_of_an_equation_test" target="11" />
       <module name="Problems__4_-Fizz_Buzz_main" target="11" />
