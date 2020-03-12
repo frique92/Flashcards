@@ -60,6 +60,16 @@
       <module name="Problems__31_-Shapes_area_test" target="11" />
       <module name="Problems__32_-Publications_main" target="11" />
       <module name="Problems__32_-Publications_test" target="11" />
+      <module name="Problems__33_-Find_mistake_main" target="11" />
+      <module name="Problems__33_-Find_mistake_test" target="11" />
+      <module name="Problems__34_-Publication_and_its_subclasses_main" target="11" />
+      <module name="Problems__34_-Publication_and_its_subclasses_test" target="11" />
+      <module name="Problems__35_-Mutable_geometric_shapes_main" target="11" />
+      <module name="Problems__35_-Mutable_geometric_shapes_test" target="11" />
+      <module name="Problems__36_-Account_Service_main" target="11" />
+      <module name="Problems__36_-Account_Service_test" target="11" />
+      <module name="Problems__37_-Compact_strings_with_AsciiCharSequence_main" target="11" />
+      <module name="Problems__37_-Compact_strings_with_AsciiCharSequence_test" target="11" />
       <module name="Problems__3_-The_roots_of_an_equation_main" target="11" />
       <module name="Problems__3_-The_roots_of_an_equation_test" target="11" />
       <module name="Problems__4_-Fizz_Buzz_main" target="11" />
