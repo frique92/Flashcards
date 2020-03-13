@@ -70,8 +70,16 @@
       <module name="Problems__36_-Account_Service_test" target="11" />
       <module name="Problems__37_-Compact_strings_with_AsciiCharSequence_main" target="11" />
       <module name="Problems__37_-Compact_strings_with_AsciiCharSequence_test" target="11" />
+      <module name="Problems__38_-Avoid_division_by_zero_main" target="11" />
+      <module name="Problems__38_-Avoid_division_by_zero_test" target="11" />
+      <module name="Problems__39_-String_to_double_conversion_main" target="11" />
+      <module name="Problems__39_-String_to_double_conversion_test" target="11" />
       <module name="Problems__3_-The_roots_of_an_equation_main" target="11" />
       <module name="Problems__3_-The_roots_of_an_equation_test" target="11" />
+      <module name="Problems__40_-Catching_some_exceptions_main" target="11" />
+      <module name="Problems__40_-Catching_some_exceptions_test" target="11" />
+      <module name="Problems__41_-Converting_and_multiplying_main" target="11" />
+      <module name="Problems__41_-Converting_and_multiplying_test" target="11" />
       <module name="Problems__4_-Fizz_Buzz_main" target="11" />
       <module name="Problems__4_-Fizz_Buzz_test" target="11" />
       <module name="Problems__5_-Print_main" target="11" />

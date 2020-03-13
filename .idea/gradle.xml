@@ -43,7 +43,11 @@
             <option value="$PROJECT_DIR$/Problems (35)/Mutable geometric shapes" />
             <option value="$PROJECT_DIR$/Problems (36)/Account Service" />
             <option value="$PROJECT_DIR$/Problems (37)/Compact strings with AsciiCharSequence" />
+            <option value="$PROJECT_DIR$/Problems (38)/Avoid division by zero" />
+            <option value="$PROJECT_DIR$/Problems (39)/String to double conversion" />
             <option value="$PROJECT_DIR$/Problems (4)/Fizz Buzz" />
+            <option value="$PROJECT_DIR$/Problems (40)/Catching some exceptions" />
+            <option value="$PROJECT_DIR$/Problems (41)/Converting and multiplying" />
             <option value="$PROJECT_DIR$/Problems (5)/Print" />
             <option value="$PROJECT_DIR$/Problems (6)/Users" />
             <option value="$PROJECT_DIR$/Problems (7)/Points on the 2D plane" />
