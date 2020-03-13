@@ -80,6 +80,10 @@
       <module name="Problems__40_-Catching_some_exceptions_test" target="11" />
       <module name="Problems__41_-Converting_and_multiplying_main" target="11" />
       <module name="Problems__41_-Converting_and_multiplying_test" target="11" />
+      <module name="Problems__42_-Return_empty_string_when_argument_is_null_main" target="11" />
+      <module name="Problems__42_-Return_empty_string_when_argument_is_null_test" target="11" />
+      <module name="Problems__43_-Avoid_NPE_main" target="11" />
+      <module name="Problems__43_-Avoid_NPE_test" target="11" />
       <module name="Problems__4_-Fizz_Buzz_main" target="11" />
       <module name="Problems__4_-Fizz_Buzz_test" target="11" />
       <module name="Problems__5_-Print_main" target="11" />
