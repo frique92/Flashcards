@@ -88,6 +88,14 @@
       <module name="Problems__44_-Only_true_or_false_test" target="11" />
       <module name="Problems__45_-From_Double_to_Integer_main" target="11" />
       <module name="Problems__45_-From_Double_to_Integer_test" target="11" />
+      <module name="Problems__46_-Pastry_packing_optimization_main" target="11" />
+      <module name="Problems__46_-Pastry_packing_optimization_test" target="11" />
+      <module name="Problems__47_-Boxes_are_not_just_objects!_main" target="11" />
+      <module name="Problems__47_-Boxes_are_not_just_objects!_test" target="11" />
+      <module name="Problems__48_-Printing_strings_in_the_same_order_main" target="11" />
+      <module name="Problems__48_-Printing_strings_in_the_same_order_test" target="11" />
+      <module name="Problems__49_-Blacklist_main" target="11" />
+      <module name="Problems__49_-Blacklist_test" target="11" />
       <module name="Problems__4_-Fizz_Buzz_main" target="11" />
       <module name="Problems__4_-Fizz_Buzz_test" target="11" />
       <module name="Problems__5_-Print_main" target="11" />
