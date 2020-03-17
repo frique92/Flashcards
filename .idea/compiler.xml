@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="Flashcards-Problems__56_-Sherlock_Holmes_and_removing_of_characters_main" target="11" />
+      <module name="Flashcards-Problems__56_-Sherlock_Holmes_and_removing_of_characters_test" target="11" />
       <module name="Flashcards-task_main" target="11" />
       <module name="Flashcards-task_test" target="11" />
       <module name="Problems-Initializing_an_array_of_characters_main" target="11" />
