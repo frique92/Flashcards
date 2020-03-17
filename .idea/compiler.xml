@@ -106,6 +106,12 @@
       <module name="Problems__52_-Output_elements_test" target="11" />
       <module name="Problems__53_-Spell_checker_main" target="11" />
       <module name="Problems__53_-Spell_checker_test" target="11" />
+      <module name="Problems__54_-Displaying_pairs_main" target="11" />
+      <module name="Problems__54_-Displaying_pairs_test" target="11" />
+      <module name="Problems__55_-Kidnapper_of_Ice_cream_main" target="11" />
+      <module name="Problems__55_-Kidnapper_of_Ice_cream_test" target="11" />
+      <module name="Problems__56_-Sherlock_Holmes_and_removing_of_characters_main" target="11" />
+      <module name="Problems__56_-Sherlock_Holmes_and_removing_of_characters_test" target="11" />
       <module name="Problems__5_-Print_main" target="11" />
       <module name="Problems__5_-Print_test" target="11" />
       <module name="Problems__6_-Users_main" target="11" />
