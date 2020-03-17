@@ -98,6 +98,14 @@
       <module name="Problems__49_-Blacklist_test" target="11" />
       <module name="Problems__4_-Fizz_Buzz_main" target="11" />
       <module name="Problems__4_-Fizz_Buzz_test" target="11" />
+      <module name="Problems__50_-Complex_numbers_main" target="11" />
+      <module name="Problems__50_-Complex_numbers_test" target="11" />
+      <module name="Problems__51_-Creating_a_set_main" target="11" />
+      <module name="Problems__51_-Creating_a_set_test" target="11" />
+      <module name="Problems__52_-Output_elements_main" target="11" />
+      <module name="Problems__52_-Output_elements_test" target="11" />
+      <module name="Problems__53_-Spell_checker_main" target="11" />
+      <module name="Problems__53_-Spell_checker_test" target="11" />
       <module name="Problems__5_-Print_main" target="11" />
       <module name="Problems__5_-Print_test" target="11" />
       <module name="Problems__6_-Users_main" target="11" />
