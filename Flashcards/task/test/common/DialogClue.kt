@@ -103,7 +103,9 @@ class DialogClue(private val phrases: List<PhraseLine>) {
                     if (!lineIter.hasNext()) {
                         return wrongOutputSizeFeedback()
                     }
-                    val result = phraseLine.checker(lineIter.next(), context)
+
+                    val line: String = lineIter.next()
+                    val result = phraseLine.checker(line, context)
                     if (result != CheckResult.TRUE) {
                         return CheckResult.FALSE(result.feedback)
                     }
