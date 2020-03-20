@@ -1,0 +1,10 @@
+rus
+RussiaFile
+ger
+Germany
+jap
+Japan
+kor
+Korea
+usa
+USA

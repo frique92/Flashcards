@@ -132,6 +132,8 @@
       <module name="Problems__8_-Tables_and_rows_test" target="11" />
       <module name="Problems__9_-Binary_search_main" target="11" />
       <module name="Problems__9_-Binary_search_test" target="11" />
+      <module name="ReadFile_main" target="11" />
+      <module name="ReadFile_test" target="11" />
       <module name="util_main" target="11" />
       <module name="util_test" target="11" />
     </bytecodeTargetLevel>
