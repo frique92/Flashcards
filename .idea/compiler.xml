@@ -124,6 +124,14 @@
       <module name="Problems__5_-Print_test" target="11" />
       <module name="Problems__60_-Are_siblings_main" target="11" />
       <module name="Problems__60_-Are_siblings_test" target="11" />
+      <module name="Problems__61_-Removing_duplicates_and_sorting_main" target="11" />
+      <module name="Problems__61_-Removing_duplicates_and_sorting_test" target="11" />
+      <module name="Problems__62_-Reverse_input_text_main" target="11" />
+      <module name="Problems__62_-Reverse_input_text_test" target="11" />
+      <module name="Problems__63_-Convert_to_bytes_main" target="11" />
+      <module name="Problems__63_-Convert_to_bytes_test" target="11" />
+      <module name="Problems__64_-Count_words_main" target="11" />
+      <module name="Problems__64_-Count_words_test" target="11" />
       <module name="Problems__6_-Users_main" target="11" />
       <module name="Problems__6_-Users_test" target="11" />
       <module name="Problems__7_-Points_on_the_2D_plane_main" target="11" />
