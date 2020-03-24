@@ -21,18 +21,20 @@ class Flashcards {
     private Map<String, String> flashcards;
     private Scanner scanner;
     private Map<String, Integer> hardestCards;
+    private ArrayList<String> log;
 
     Flashcards() {
         flashcards = new LinkedHashMap<>();
         scanner = new Scanner(System.in);
         flashcardsIsWorking = true;
         hardestCards = new HashMap<>();
+        log = new ArrayList<>();
     }
 
     public void start() {
         while (flashcardsIsWorking) {
-            System.out.println("Input the action (add, remove, import, export, ask, exit):");
-            String command = scanner.nextLine();
+            outputMsg("Input the action (add, remove, import, export, ask, exit):");
+            String command = getInputUser();
 
             switch (command) {
                 case ("add"):
@@ -56,11 +58,14 @@ class Flashcards {
                 case ("reset stats"):
                     resetHardestCards();
                     break;
+                case ("log"):
+                    exportLog();
+                    break;
                 case ("exit"):
                     exit();
                     break;
                 default:
-                    System.out.println("Unexpected command: " + command);
+                    outputMsg("Unexpected command: " + command);
             }
         }
     }
@@ -70,44 +75,45 @@ class Flashcards {
         String definition = "";
         boolean inputDataIsCorrect = true;
 
-        System.out.println("The card:");
-        term = scanner.nextLine();
+        outputMsg("The card:");
+        term = getInputUser();
 
         if (flashcards.containsKey(term)) {
-            System.out.println("The card \"" + term + "\" already exists. Try again:");
+            outputMsg("The card \"" + term + "\" already exists. Try again:");
             inputDataIsCorrect = false;
         }
 
         if (inputDataIsCorrect) {
-            System.out.println("The definition of the card:");
-            definition = scanner.nextLine();
+            outputMsg("The definition of the card:");
+            definition = getInputUser();
             if (flashcards.containsValue(definition)) {
-                System.out.println("The definition \"" + definition + "\" already exists. Try again:");
+                outputMsg("The definition \"" + definition + "\" already exists. Try again:");
                 inputDataIsCorrect = false;
             }
         }
 
         if (inputDataIsCorrect) {
             flashcards.put(term, definition);
-            System.out.println("The pair (\"" + term + "\":\"" + definition + "\") has been added.");
+            outputMsg("The pair (\"" + term + "\":\"" + definition + "\") has been added.");
         }
 
     }
 
     private void remove() {
-        System.out.println("The card:");
-        String term = scanner.nextLine();
+        outputMsg("The card:");
+        String term = getInputUser();
 
         if (flashcards.containsKey(term)) {
             flashcards.remove(term);
-            System.out.println("The card has been removed.");
-        } else System.out.println("Can't remove \"" + term + "\": there is no such card.");
+            hardestCards.remove(term);
+            outputMsg("The card has been removed.");
+        } else outputMsg("Can't remove \"" + term + "\": there is no such card.");
     }
 
     private void importData() {
 
-        System.out.println("File name:");
-        String fileName = scanner.nextLine();
+        outputMsg("File name:");
+        String fileName = getInputUser();
 
         File file = new File(fileName);
 
@@ -124,18 +130,18 @@ class Flashcards {
                 count++;
             }
 
-            System.out.println(count + " cards have been loaded.");
+            outputMsg(count + " cards have been loaded.");
 
         } catch (FileNotFoundException e) {
-            System.out.println("File not found.");
+            outputMsg("File not found.");
         }
 
     }
 
     private void exportData() {
 
-        System.out.println("File name:");
-        String fileName = scanner.nextLine();
+        outputMsg("File name:");
+        String fileName = getInputUser();
 
         File file = new File(fileName);
 
@@ -147,10 +153,31 @@ class Flashcards {
                 writer.println(hardestCards.get(entry.getKey()));
             }
 
-            System.out.println(flashcards.size() + " cards have been saved.");
+            outputMsg(flashcards.size() + " cards have been saved.");
 
         } catch (IOException e) {
-            System.out.print("File not found.");
+            outputMsg("File not found.");
+        }
+
+    }
+
+    private void exportLog() {
+
+        outputMsg("File name:");
+        String fileName = getInputUser();
+
+        File file = new File(fileName);
+
+        try (PrintWriter writer = new PrintWriter(file)) {
+
+            for (String s : log) {
+                writer.println(s);
+            }
+
+            outputMsg("The log has been saved.");
+
+        } catch (IOException e) {
+            outputMsg("File not found.");
         }
 
     }
@@ -160,25 +187,24 @@ class Flashcards {
         ArrayList<String> keys = new ArrayList<>(flashcards.keySet());
         Random random = new Random();
 
-        System.out.println("How many times to ask?");
-        numberOfCards = scanner.nextInt();
-        scanner.nextLine();
+        outputMsg("How many times to ask?");
+        numberOfCards = Integer.parseInt(getInputUser());
 
         for (int i = 0; i < numberOfCards; i++) {
             String randomKey = keys.get(random.nextInt(keys.size()));
 
-            System.out.println("Print the definition of \"" + randomKey + "\":");
-            String definition = scanner.nextLine();
+            outputMsg("Print the definition of \"" + randomKey + "\":");
+            String definition = getInputUser();
 
             if (flashcards.get(randomKey).equals(definition)) {
-                System.out.println("Correct answer");
+                outputMsg("Correct answer");
             } else {
                 String anyKeyByDefinition = getKeyByDefinition(definition);
 
                 if (anyKeyByDefinition == null) {
-                    System.out.println("Wrong answer. The correct one is \"" + flashcards.get(randomKey) + "\".");
+                    outputMsg("Wrong answer. The correct one is \"" + flashcards.get(randomKey) + "\".");
                 } else {
-                    System.out.println("Wrong answer. The correct one is \""
+                    outputMsg("Wrong answer. The correct one is \""
                             + flashcards.get(randomKey) + "\", you've just written the definition of \""
                             + anyKeyByDefinition + "\".");
                 }
@@ -195,13 +221,13 @@ class Flashcards {
     }
 
     private void exit() {
-        System.out.println("Bye bye!");
+        outputMsg("Bye bye!");
         flashcardsIsWorking = false;
     }
 
     private void getHardestCards() {
         if (hardestCards.size() == 0) {
-            System.out.println("There are no cards with errors.");
+            outputMsg("There are no cards with errors.");
         } else {
 
             ArrayList<String> terms = new ArrayList<>();
@@ -218,7 +244,7 @@ class Flashcards {
             }
 
             if (terms.size() == 1) {
-                System.out.println("The hardest card is \"" + terms.get(0) + "\". You have " +
+                outputMsg("The hardest card is \"" + terms.get(0) + "\". You have " +
                         maxErrors + " errors answering it.");
             } else {
                 StringBuilder str = new StringBuilder();
@@ -230,7 +256,7 @@ class Flashcards {
                     }
                 }
 
-                System.out.println("The hardest cards are " + str + ". You have " +
+                outputMsg("The hardest cards are " + str + ". You have " +
                         maxErrors + " errors answering it.");
             }
 
@@ -239,7 +265,7 @@ class Flashcards {
 
     private void resetHardestCards() {
         hardestCards.clear();
-        System.out.println("Card statistics has been reset.");
+        outputMsg("Card statistics has been reset.");
     }
 
     private String getKeyByDefinition(String definition) {
@@ -249,6 +275,18 @@ class Flashcards {
         }
 
         return null;
+    }
+
+    private void outputMsg(String message) {
+        System.out.println(message);
+        log.add(message);
+    }
+
+    private String getInputUser() {
+        String data = scanner.nextLine();
+        log.add(data);
+
+        return data;
     }
 
 }

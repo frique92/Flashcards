@@ -1,179 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FlashcardsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-24T11:19:56" hostname="GopherPC" time="0.249">
-  <properties/>
-  <testcase name="start" classname="FlashcardsTest" time="0.249"/>
-  <system-out><![CDATA[?[1;31m
-Start test 1?[0m
 Input the action (add, remove, import, export, ask, exit):
->export
-File name:
->capitals.txt
-0 cards have been saved.
-Input the action (add, remove, import, export, ask, exit):
->exit
-Bye bye!
-?[1;31m
-Start test 2?[0m
-Input the action (add, remove, import, export, ask, exit):
->hardest card
+hardest card
 There are no cards with errors.
 Input the action (add, remove, import, export, ask, exit):
->add
+add
 The card:
->France
+France
 The definition of the card:
->Paris
+Paris
 The pair ("France":"Paris") has been added.
 Input the action (add, remove, import, export, ask, exit):
->ask
+ask
 How many times to ask?
->2
+2
 Print the definition of "France":
->France
+France
 Wrong answer. The correct one is "Paris".
 Print the definition of "France":
->??
+??
 Wrong answer. The correct one is "Paris".
 Input the action (add, remove, import, export, ask, exit):
->hardest card
+hardest card
 The hardest card is "France". You have 2 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
->reset stats
+reset stats
 Card statistics has been reset.
 Input the action (add, remove, import, export, ask, exit):
->hardest card
+hardest card
 There are no cards with errors.
 Input the action (add, remove, import, export, ask, exit):
->add
+add
 The card:
->Russia
+Russia
 The definition of the card:
->Moscow
+Moscow
 The pair ("Russia":"Moscow") has been added.
 Input the action (add, remove, import, export, ask, exit):
->ask
+ask
 How many times to ask?
->2
+2
 Print the definition of "Russia":
->??
+??
 Wrong answer. The correct one is "Moscow".
 Print the definition of "France":
->??
+??
 Wrong answer. The correct one is "Paris".
 Input the action (add, remove, import, export, ask, exit):
->hardest card
+hardest card
 The hardest cards are "France", "Russia". You have 1 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
->ask
+ask
 How many times to ask?
->2
+2
 Print the definition of "Russia":
->??
+??
 Wrong answer. The correct one is "Moscow".
 Print the definition of "France":
->??
+??
 Wrong answer. The correct one is "Paris".
 Input the action (add, remove, import, export, ask, exit):
->hardest card
+hardest card
 The hardest cards are "France", "Russia". You have 2 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
->ask
+ask
 How many times to ask?
->2
+2
 Print the definition of "France":
->??
+??
 Wrong answer. The correct one is "Paris".
 Print the definition of "Russia":
->??
+??
 Wrong answer. The correct one is "Moscow".
 Input the action (add, remove, import, export, ask, exit):
->hardest card
+hardest card
 The hardest cards are "France", "Russia". You have 3 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
->ask
+ask
 How many times to ask?
->2
+2
 Print the definition of "Russia":
->??
+??
 Wrong answer. The correct one is "Moscow".
 Print the definition of "Russia":
->??
+??
 Wrong answer. The correct one is "Moscow".
 Input the action (add, remove, import, export, ask, exit):
->hardest card
+hardest card
 The hardest card is "Russia". You have 5 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
->ask
+ask
 How many times to ask?
->2
+2
 Print the definition of "France":
->??
+??
 Wrong answer. The correct one is "Paris".
 Print the definition of "Russia":
->??
+??
 Wrong answer. The correct one is "Moscow".
 Input the action (add, remove, import, export, ask, exit):
->hardest card
+hardest card
 The hardest card is "Russia". You have 6 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
->export
+export
 File name:
->capitals.txt
+capitals.txt
 2 cards have been saved.
 Input the action (add, remove, import, export, ask, exit):
->log
+log
 File name:
->testLog.txt
-The log has been saved.
-Input the action (add, remove, import, export, ask, exit):
->exit
-Bye bye!
-?[1;31m
-Start test 3?[0m
-Input the action (add, remove, import, export, ask, exit):
->hardest card
-There are no cards with errors.
-Input the action (add, remove, import, export, ask, exit):
->add
-The card:
->France
-The definition of the card:
->UpdateMeFromImport
-The pair ("France":"UpdateMeFromImport") has been added.
-Input the action (add, remove, import, export, ask, exit):
->ask
-How many times to ask?
->2
-Print the definition of "France":
->??
-Wrong answer. The correct one is "UpdateMeFromImport".
-Print the definition of "France":
->??
-Wrong answer. The correct one is "UpdateMeFromImport".
-Input the action (add, remove, import, export, ask, exit):
->import
-File name:
->capitals.txt
-2 cards have been loaded.
-Input the action (add, remove, import, export, ask, exit):
->hardest card
-The hardest card is "Russia". You have 6 errors answering it.
-Input the action (add, remove, import, export, ask, exit):
->remove
-The card:
->France
-The card has been removed.
-Input the action (add, remove, import, export, ask, exit):
->remove
-The card:
->Russia
-The card has been removed.
-Input the action (add, remove, import, export, ask, exit):
->hardest card
-There are no cards with errors.
-Input the action (add, remove, import, export, ask, exit):
->exit
-Bye bye!
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
+testLog.txt

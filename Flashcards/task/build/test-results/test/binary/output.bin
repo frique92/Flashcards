@@ -51,41 +51,28 @@ File name:
 >ask
 How many times to ask?
 >2
-!Print the definition of "France":
+!Print the definition of "Russia":
 >??
-)Wrong answer. The correct one is "Paris".
+*Wrong answer. The correct one is "Moscow".
 !Print the definition of "France":
 >??
 )Wrong answer. The correct one is "Paris".
 :Input the action (add, remove, import, export, ask, exit):
 >hardest card
-=The hardest card is "France". You have 2 errors answering it.
+IThe hardest cards are "France", "Russia". You have 1 errors answering it.
 :Input the action (add, remove, import, export, ask, exit):
 >ask
 How many times to ask?
 >2
-!Print the definition of "France":
+!Print the definition of "Russia":
 >??
-)Wrong answer. The correct one is "Paris".
-!Print the definition of "France":
->??
-)Wrong answer. The correct one is "Paris".
-:Input the action (add, remove, import, export, ask, exit):
->hardest card
-=The hardest card is "France". You have 4 errors answering it.
-:Input the action (add, remove, import, export, ask, exit):
->ask
-How many times to ask?
->2
-!Print the definition of "France":
->??
-)Wrong answer. The correct one is "Paris".
+*Wrong answer. The correct one is "Moscow".
 !Print the definition of "France":
 >??
 )Wrong answer. The correct one is "Paris".
 :Input the action (add, remove, import, export, ask, exit):
 >hardest card
-=The hardest card is "France". You have 6 errors answering it.
+IThe hardest cards are "France", "Russia". You have 2 errors answering it.
 :Input the action (add, remove, import, export, ask, exit):
 >ask
 How many times to ask?
@@ -98,7 +85,20 @@ File name:
 *Wrong answer. The correct one is "Moscow".
 :Input the action (add, remove, import, export, ask, exit):
 >hardest card
-=The hardest card is "France". You have 7 errors answering it.
+IThe hardest cards are "France", "Russia". You have 3 errors answering it.
+:Input the action (add, remove, import, export, ask, exit):
+>ask
+How many times to ask?
+>2
+!Print the definition of "Russia":
+>??
+*Wrong answer. The correct one is "Moscow".
+!Print the definition of "Russia":
+>??
+*Wrong answer. The correct one is "Moscow".
+:Input the action (add, remove, import, export, ask, exit):
+>hardest card
+=The hardest card is "Russia". You have 5 errors answering it.
 :Input the action (add, remove, import, export, ask, exit):
 >ask
 How many times to ask?
@@ -106,12 +106,12 @@ File name:
 !Print the definition of "France":
 >??
 )Wrong answer. The correct one is "Paris".
-!Print the definition of "France":
+!Print the definition of "Russia":
 >??
-)Wrong answer. The correct one is "Paris".
+*Wrong answer. The correct one is "Moscow".
 :Input the action (add, remove, import, export, ask, exit):
 >hardest card
-=The hardest card is "France". You have 9 errors answering it.
+=The hardest card is "Russia". You have 6 errors answering it.
 :Input the action (add, remove, import, export, ask, exit):
 >export
 
@@ -120,10 +120,57 @@ File name:
 2 cards have been saved.
 :Input the action (add, remove, import, export, ask, exit):
 >log
-Unexpected command: log
-:Input the action (add, remove, import, export, ask, exit):
+
+File name:
 >testLog.txt
-Unexpected command: testLog.txt
+The log has been saved.
+:Input the action (add, remove, import, export, ask, exit):
+>exit
+Bye bye!
+[1;31m
+Start test 3[0m
+:Input the action (add, remove, import, export, ask, exit):
+>hardest card
+There are no cards with errors.
+:Input the action (add, remove, import, export, ask, exit):
+>add
+	The card:
+>France
+The definition of the card:
+>UpdateMeFromImport
+8The pair ("France":"UpdateMeFromImport") has been added.
+:Input the action (add, remove, import, export, ask, exit):
+>ask
+How many times to ask?
+>2
+!Print the definition of "France":
+>??
+6Wrong answer. The correct one is "UpdateMeFromImport".
+!Print the definition of "France":
+>??
+6Wrong answer. The correct one is "UpdateMeFromImport".
+:Input the action (add, remove, import, export, ask, exit):
+>import
+
+File name:
+>capitals.txt
+2 cards have been loaded.
+:Input the action (add, remove, import, export, ask, exit):
+>hardest card
+=The hardest card is "Russia". You have 6 errors answering it.
+:Input the action (add, remove, import, export, ask, exit):
+>remove
+	The card:
+>France
+The card has been removed.
+:Input the action (add, remove, import, export, ask, exit):
+>remove
+	The card:
+>Russia
+The card has been removed.
+:Input the action (add, remove, import, export, ask, exit):
+>hardest card
+There are no cards with errors.
 :Input the action (add, remove, import, export, ask, exit):
 >exit
 Bye bye!
