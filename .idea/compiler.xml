@@ -132,6 +132,12 @@
       <module name="Problems__63_-Convert_to_bytes_test" target="11" />
       <module name="Problems__64_-Count_words_main" target="11" />
       <module name="Problems__64_-Count_words_test" target="11" />
+      <module name="Problems__65_-Output_the_list's_elements_main" target="11" />
+      <module name="Problems__65_-Output_the_list's_elements_test" target="11" />
+      <module name="Problems__66_-Concat_positive_numbers_main" target="11" />
+      <module name="Problems__66_-Concat_positive_numbers_test" target="11" />
+      <module name="Problems__67_-Find_the_nearest_number_main" target="11" />
+      <module name="Problems__67_-Find_the_nearest_number_test" target="11" />
       <module name="Problems__6_-Users_main" target="11" />
       <module name="Problems__6_-Users_test" target="11" />
       <module name="Problems__7_-Points_on_the_2D_plane_main" target="11" />

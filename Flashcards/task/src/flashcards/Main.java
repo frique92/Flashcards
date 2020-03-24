@@ -1,6 +1,9 @@
 package flashcards;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.*;
 
 public class Main {
@@ -17,11 +20,13 @@ class Flashcards {
     boolean flashcardsIsWorking;
     private Map<String, String> flashcards;
     private Scanner scanner;
+    private Map<String, Integer> hardestCards;
 
     Flashcards() {
         flashcards = new LinkedHashMap<>();
         scanner = new Scanner(System.in);
         flashcardsIsWorking = true;
+        hardestCards = new HashMap<>();
     }
 
     public void start() {
@@ -44,6 +49,12 @@ class Flashcards {
                     break;
                 case ("export"):
                     exportData();
+                    break;
+                case ("hardest card"):
+                    getHardestCards();
+                    break;
+                case ("reset stats"):
+                    resetHardestCards();
                     break;
                 case ("exit"):
                     exit();
@@ -103,7 +114,13 @@ class Flashcards {
         try (Scanner scannerFile = new Scanner(file)) {
             int count = 0;
             while (scannerFile.hasNext()) {
-                flashcards.put(scannerFile.nextLine(), scannerFile.nextLine());
+
+                String term = scannerFile.nextLine();
+                String definition = scannerFile.nextLine();
+                int mistakes = Integer.parseInt(scannerFile.nextLine());
+
+                flashcards.put(term, definition);
+                hardestCards.put(term, mistakes);
                 count++;
             }
 
@@ -127,6 +144,7 @@ class Flashcards {
             for (Map.Entry<String, String> entry : flashcards.entrySet()) {
                 writer.println(entry.getKey());
                 writer.println(entry.getValue());
+                writer.println(hardestCards.get(entry.getKey()));
             }
 
             System.out.println(flashcards.size() + " cards have been saved.");
@@ -164,6 +182,12 @@ class Flashcards {
                             + flashcards.get(randomKey) + "\", you've just written the definition of \""
                             + anyKeyByDefinition + "\".");
                 }
+
+                if (hardestCards.containsKey(randomKey)) {
+                    hardestCards.put(randomKey, hardestCards.get(randomKey) + 1);
+                } else {
+                    hardestCards.put(randomKey, 1);
+                }
             }
 
         }
@@ -173,6 +197,49 @@ class Flashcards {
     private void exit() {
         System.out.println("Bye bye!");
         flashcardsIsWorking = false;
+    }
+
+    private void getHardestCards() {
+        if (hardestCards.size() == 0) {
+            System.out.println("There are no cards with errors.");
+        } else {
+
+            ArrayList<String> terms = new ArrayList<>();
+            int maxErrors = 0;
+
+            for (Map.Entry<String, Integer> entry : hardestCards.entrySet()) {
+                if (entry.getValue() > maxErrors) {
+                    terms.clear();
+                    terms.add(entry.getKey());
+                    maxErrors = entry.getValue();
+                } else if (entry.getValue() == maxErrors) {
+                    terms.add(entry.getKey());
+                }
+            }
+
+            if (terms.size() == 1) {
+                System.out.println("The hardest card is \"" + terms.get(0) + "\". You have " +
+                        maxErrors + " errors answering it.");
+            } else {
+                StringBuilder str = new StringBuilder();
+                for (String term : terms) {
+                    if ("".equals(str.toString())) {
+                        str.append("\"").append(term).append("\"");
+                    } else {
+                        str.append(", \"").append(term).append("\"");
+                    }
+                }
+
+                System.out.println("The hardest cards are " + str + ". You have " +
+                        maxErrors + " errors answering it.");
+            }
+
+        }
+    }
+
+    private void resetHardestCards() {
+        hardestCards.clear();
+        System.out.println("Card statistics has been reset.");
     }
 
     private String getKeyByDefinition(String definition) {
