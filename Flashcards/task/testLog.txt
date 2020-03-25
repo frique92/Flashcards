@@ -54,25 +54,12 @@ How many times to ask?
 Print the definition of "Russia":
 ??
 Wrong answer. The correct one is "Moscow".
-Print the definition of "France":
-??
-Wrong answer. The correct one is "Paris".
-Input the action (add, remove, import, export, ask, exit):
-hardest card
-The hardest cards are "France", "Russia". You have 2 errors answering it.
-Input the action (add, remove, import, export, ask, exit):
-ask
-How many times to ask?
-2
-Print the definition of "France":
-??
-Wrong answer. The correct one is "Paris".
 Print the definition of "Russia":
 ??
 Wrong answer. The correct one is "Moscow".
 Input the action (add, remove, import, export, ask, exit):
 hardest card
-The hardest cards are "France", "Russia". You have 3 errors answering it.
+The hardest card is "Russia". You have 3 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
 ask
 How many times to ask?
@@ -80,12 +67,12 @@ How many times to ask?
 Print the definition of "Russia":
 ??
 Wrong answer. The correct one is "Moscow".
-Print the definition of "Russia":
+Print the definition of "France":
 ??
-Wrong answer. The correct one is "Moscow".
+Wrong answer. The correct one is "Paris".
 Input the action (add, remove, import, export, ask, exit):
 hardest card
-The hardest card is "Russia". You have 5 errors answering it.
+The hardest card is "Russia". You have 4 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
 ask
 How many times to ask?
@@ -93,6 +80,19 @@ How many times to ask?
 Print the definition of "France":
 ??
 Wrong answer. The correct one is "Paris".
+Print the definition of "France":
+??
+Wrong answer. The correct one is "Paris".
+Input the action (add, remove, import, export, ask, exit):
+hardest card
+The hardest cards are "France", "Russia". You have 4 errors answering it.
+Input the action (add, remove, import, export, ask, exit):
+ask
+How many times to ask?
+2
+Print the definition of "Russia":
+??
+Wrong answer. The correct one is "Moscow".
 Print the definition of "Russia":
 ??
 Wrong answer. The correct one is "Moscow".

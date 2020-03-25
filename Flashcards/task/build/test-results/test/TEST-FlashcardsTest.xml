@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FlashcardsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-24T11:19:56" hostname="GopherPC" time="0.249">
+<testsuite name="FlashcardsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-25T07:01:23" hostname="GopherPC" time="0.242">
   <properties/>
-  <testcase name="start" classname="FlashcardsTest" time="0.249"/>
+  <testcase name="start" classname="FlashcardsTest" time="0.242"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Input the action (add, remove, import, export, ask, exit):
@@ -70,25 +70,12 @@ How many times to ask?
 Print the definition of "Russia":
 >??
 Wrong answer. The correct one is "Moscow".
-Print the definition of "France":
->??
-Wrong answer. The correct one is "Paris".
-Input the action (add, remove, import, export, ask, exit):
->hardest card
-The hardest cards are "France", "Russia". You have 2 errors answering it.
-Input the action (add, remove, import, export, ask, exit):
->ask
-How many times to ask?
->2
-Print the definition of "France":
->??
-Wrong answer. The correct one is "Paris".
 Print the definition of "Russia":
 >??
 Wrong answer. The correct one is "Moscow".
 Input the action (add, remove, import, export, ask, exit):
 >hardest card
-The hardest cards are "France", "Russia". You have 3 errors answering it.
+The hardest card is "Russia". You have 3 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
 >ask
 How many times to ask?
@@ -96,12 +83,12 @@ How many times to ask?
 Print the definition of "Russia":
 >??
 Wrong answer. The correct one is "Moscow".
-Print the definition of "Russia":
+Print the definition of "France":
 >??
-Wrong answer. The correct one is "Moscow".
+Wrong answer. The correct one is "Paris".
 Input the action (add, remove, import, export, ask, exit):
 >hardest card
-The hardest card is "Russia". You have 5 errors answering it.
+The hardest card is "Russia". You have 4 errors answering it.
 Input the action (add, remove, import, export, ask, exit):
 >ask
 How many times to ask?
@@ -109,6 +96,19 @@ How many times to ask?
 Print the definition of "France":
 >??
 Wrong answer. The correct one is "Paris".
+Print the definition of "France":
+>??
+Wrong answer. The correct one is "Paris".
+Input the action (add, remove, import, export, ask, exit):
+>hardest card
+The hardest cards are "France", "Russia". You have 4 errors answering it.
+Input the action (add, remove, import, export, ask, exit):
+>ask
+How many times to ask?
+>2
+Print the definition of "Russia":
+>??
+Wrong answer. The correct one is "Moscow".
 Print the definition of "Russia":
 >??
 Wrong answer. The correct one is "Moscow".

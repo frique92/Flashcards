@@ -9,7 +9,17 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        Flashcards flashcards = new Flashcards();
+        String importFileName = "", exportFileName = "";
+
+        if (args.length > 0) {
+            for (int i = 0; i < args.length; i++) {
+                if ("-import".equals(args[i])) importFileName = args[i+1];
+                if ("-export".equals(args[i])) exportFileName = args[i+1];
+            }
+        }
+
+
+        Flashcards flashcards = new Flashcards(importFileName, exportFileName);
         flashcards.start();
 
     }
@@ -22,6 +32,7 @@ class Flashcards {
     private Scanner scanner;
     private Map<String, Integer> hardestCards;
     private ArrayList<String> log;
+    private String importFileName, exportFileName;
 
     Flashcards() {
         flashcards = new LinkedHashMap<>();
@@ -31,7 +42,17 @@ class Flashcards {
         log = new ArrayList<>();
     }
 
+    Flashcards(String importFileName, String exportFileName) {
+        this();
+
+        this.importFileName = importFileName;
+        this.exportFileName = exportFileName;
+    }
+
     public void start() {
+
+        if (!"".equals(importFileName)) importData(importFileName);
+
         while (flashcardsIsWorking) {
             outputMsg("Input the action (add, remove, import, export, ask, exit):");
             String command = getInputUser();
@@ -115,6 +136,10 @@ class Flashcards {
         outputMsg("File name:");
         String fileName = getInputUser();
 
+        importData(fileName);
+    }
+
+    private void importData(String fileName) {
         File file = new File(fileName);
 
         try (Scanner scannerFile = new Scanner(file)) {
@@ -135,7 +160,6 @@ class Flashcards {
         } catch (FileNotFoundException e) {
             outputMsg("File not found.");
         }
-
     }
 
     private void exportData() {
@@ -143,6 +167,11 @@ class Flashcards {
         outputMsg("File name:");
         String fileName = getInputUser();
 
+        exportData(fileName);
+
+    }
+
+    private void exportData(String fileName) {
         File file = new File(fileName);
 
         try (PrintWriter writer = new PrintWriter(file)) {
@@ -158,8 +187,8 @@ class Flashcards {
         } catch (IOException e) {
             outputMsg("File not found.");
         }
-
     }
+
 
     private void exportLog() {
 
@@ -223,6 +252,8 @@ class Flashcards {
     private void exit() {
         outputMsg("Bye bye!");
         flashcardsIsWorking = false;
+
+        if (!"".equals(exportFileName)) exportData(exportFileName);
     }
 
     private void getHardestCards() {
